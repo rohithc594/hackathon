@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -9,26 +9,30 @@
 
 @layer base {
   body {
-    @apply bg-[#F8F9FA] text-[#1A1A1A] font-sans antialiased;
+    @apply bg-[#FAFAFA] text-[#111827] font-sans antialiased;
   }
 }
 
 .glass-card {
-  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl rounded-2xl;
+  @apply bg-white border border-[#E5E7EB] shadow-[0_1px_3px_0_rgba(0,0,0,0.05)] rounded-xl;
 }
 
 .data-grid-line {
-  @apply border-b border-[#E5E7EB];
+  @apply border-b border-[#F3F4F6];
 }
 
 .btn-primary {
-  @apply bg-[#1A1A1A] text-white px-6 py-3 rounded-xl font-medium transition-all hover:bg-[#333333] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply bg-[#111827] text-white px-5 py-2.5 rounded-lg font-medium transition-all hover:bg-[#1F2937] active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed text-sm;
 }
 
 .btn-secondary {
-  @apply bg-white text-[#1A1A1A] border border-[#E5E7EB] px-6 py-3 rounded-xl font-medium transition-all hover:bg-[#F3F4F6] active:scale-[0.98];
+  @apply bg-white text-[#374151] border border-[#D1D5DB] px-5 py-2.5 rounded-lg font-medium transition-all hover:bg-[#F9FAFB] active:scale-[0.98] text-sm;
 }
 
 .input-field {
-  @apply w-full bg-white border border-[#E5E7EB] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#1A1A1A]/10 focus:border-[#1A1A1A] transition-all;
+  @apply w-full bg-white border border-[#D1D5DB] rounded-lg px-4 py-2.5 focus:outline-none focus:ring-1 focus:ring-[#111827] focus:border-[#111827] transition-all text-sm placeholder:text-gray-400;
+}
+
+.section-label {
+  @apply text-[10px] uppercase tracking-[0.15em] font-bold text-gray-400 mb-4 block;
 }
